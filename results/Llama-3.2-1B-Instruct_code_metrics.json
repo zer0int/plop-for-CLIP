@@ -1,0 +1,454 @@
+{
+  "model.layers.0.mlp.gate_proj": {
+    "actual": 0.05745302140712738,
+    "random": 0.04419234022498131
+  },
+  "model.layers.2.self_attn.o_proj": {
+    "actual": 0.025175204500555992,
+    "random": 0.022092778235673904
+  },
+  "model.layers.5.mlp.up_proj": {
+    "actual": 0.04677703604102135,
+    "random": 0.044193197041749954
+  },
+  "model.layers.6.mlp.up_proj": {
+    "actual": 0.04838770627975464,
+    "random": 0.044190555810928345
+  },
+  "model.layers.9.mlp.up_proj": {
+    "actual": 0.04645438864827156,
+    "random": 0.04419352114200592
+  },
+  "model.layers.5.self_attn.k_proj": {
+    "actual": 0.029979396611452103,
+    "random": 0.01103152148425579
+  },
+  "model.layers.4.self_attn.k_proj": {
+    "actual": 0.03546764701604843,
+    "random": 0.011031582951545715
+  },
+  "model.layers.13.mlp.up_proj": {
+    "actual": 0.047126542776823044,
+    "random": 0.04419272392988205
+  },
+  "model.layers.1.mlp.down_proj": {
+    "actual": 0.005693686194717884,
+    "random": 0.005523485131561756
+  },
+  "lm_head": {
+    "actual": 0.2319737821817398,
+    "random": 0.17386779189109802
+  },
+  "model.layers.1.mlp.up_proj": {
+    "actual": 0.04382399469614029,
+    "random": 0.044186025857925415
+  },
+  "model.layers.12.self_attn.k_proj": {
+    "actual": 0.026927178725600243,
+    "random": 0.01103686261922121
+  },
+  "model.layers.1.mlp.gate_proj": {
+    "actual": 0.059915412217378616,
+    "random": 0.04419097676873207
+  },
+  "model.layers.13.mlp.down_proj": {
+    "actual": 0.005343141034245491,
+    "random": 0.005523718427866697
+  },
+  "model.layers.0.mlp.down_proj": {
+    "actual": 0.006775533780455589,
+    "random": 0.005523855332285166
+  },
+  "model.layers.6.mlp.gate_proj": {
+    "actual": 0.06613605469465256,
+    "random": 0.04417663812637329
+  },
+  "model.layers.10.mlp.up_proj": {
+    "actual": 0.046224355697631836,
+    "random": 0.044193387031555176
+  },
+  "model.layers.2.self_attn.v_proj": {
+    "actual": 0.009665687568485737,
+    "random": 0.011043998412787914
+  },
+  "model.layers.11.self_attn.v_proj": {
+    "actual": 0.00937475636601448,
+    "random": 0.011039819568395615
+  },
+  "model.layers.5.self_attn.v_proj": {
+    "actual": 0.012125520966947079,
+    "random": 0.01103903166949749
+  },
+  "model.layers.6.self_attn.k_proj": {
+    "actual": 0.03176075592637062,
+    "random": 0.01103631965816021
+  },
+  "model.layers.12.mlp.up_proj": {
+    "actual": 0.0456804521381855,
+    "random": 0.044189974665641785
+  },
+  "model.layers.13.self_attn.o_proj": {
+    "actual": 0.018343064934015274,
+    "random": 0.02209130860865116
+  },
+  "model.layers.10.self_attn.o_proj": {
+    "actual": 0.016492825001478195,
+    "random": 0.022083787247538567
+  },
+  "model.layers.15.self_attn.v_proj": {
+    "actual": 0.012135889381170273,
+    "random": 0.011040853336453438
+  },
+  "model.layers.14.mlp.down_proj": {
+    "actual": 0.005165427923202515,
+    "random": 0.005522964522242546
+  },
+  "model.layers.10.mlp.gate_proj": {
+    "actual": 0.06527511775493622,
+    "random": 0.04418489709496498
+  },
+  "model.layers.15.self_attn.o_proj": {
+    "actual": 0.019015027210116386,
+    "random": 0.022094573825597763
+  },
+  "model.layers.13.self_attn.q_proj": {
+    "actual": 0.04864220693707466,
+    "random": 0.022082118317484856
+  },
+  "model.layers.8.self_attn.q_proj": {
+    "actual": 0.048023682087659836,
+    "random": 0.022075671702623367
+  },
+  "model.layers.10.self_attn.v_proj": {
+    "actual": 0.01137047354131937,
+    "random": 0.011041310615837574
+  },
+  "model.layers.0.self_attn.k_proj": {
+    "actual": 0.039710331708192825,
+    "random": 0.011005635373294353
+  },
+  "model.layers.6.self_attn.q_proj": {
+    "actual": 0.061909545212984085,
+    "random": 0.022074539214372635
+  },
+  "model.layers.6.mlp.down_proj": {
+    "actual": 0.006030283868312836,
+    "random": 0.005523267667740583
+  },
+  "model.layers.5.mlp.gate_proj": {
+    "actual": 0.06591404974460602,
+    "random": 0.044184956699609756
+  },
+  "model.layers.10.self_attn.q_proj": {
+    "actual": 0.04803820326924324,
+    "random": 0.022080743685364723
+  },
+  "model.layers.3.mlp.down_proj": {
+    "actual": 0.005738747771829367,
+    "random": 0.005523857194930315
+  },
+  "model.layers.1.self_attn.q_proj": {
+    "actual": 0.07585248351097107,
+    "random": 0.022082194685935974
+  },
+  "model.layers.9.self_attn.v_proj": {
+    "actual": 0.010375987738370895,
+    "random": 0.011042795144021511
+  },
+  "model.layers.0.mlp.up_proj": {
+    "actual": 0.05111662298440933,
+    "random": 0.044191598892211914
+  },
+  "model.layers.3.self_attn.o_proj": {
+    "actual": 0.021896056830883026,
+    "random": 0.022092806175351143
+  },
+  "model.layers.13.self_attn.k_proj": {
+    "actual": 0.025561988353729248,
+    "random": 0.011034578084945679
+  },
+  "model.layers.4.self_attn.o_proj": {
+    "actual": 0.018549375236034393,
+    "random": 0.02209441363811493
+  },
+  "model.layers.9.self_attn.k_proj": {
+    "actual": 0.03161448985338211,
+    "random": 0.011028187349438667
+  },
+  "model.layers.0.self_attn.o_proj": {
+    "actual": 0.033924635499715805,
+    "random": 0.02208954095840454
+  },
+  "model.layers.2.mlp.gate_proj": {
+    "actual": 0.056009434163570404,
+    "random": 0.04418162256479263
+  },
+  "model.layers.5.mlp.down_proj": {
+    "actual": 0.006010014098137617,
+    "random": 0.005524104461073875
+  },
+  "model.layers.8.mlp.down_proj": {
+    "actual": 0.005709757097065449,
+    "random": 0.005522706545889378
+  },
+  "model.layers.15.mlp.down_proj": {
+    "actual": 0.005907516460865736,
+    "random": 0.005523402243852615
+  },
+  "model.layers.7.self_attn.v_proj": {
+    "actual": 0.012631183490157127,
+    "random": 0.01104216743260622
+  },
+  "model.layers.11.mlp.gate_proj": {
+    "actual": 0.05872300639748573,
+    "random": 0.04419317841529846
+  },
+  "model.layers.0.self_attn.q_proj": {
+    "actual": 0.0929429903626442,
+    "random": 0.021940011531114578
+  },
+  "model.layers.9.self_attn.q_proj": {
+    "actual": 0.05729900300502777,
+    "random": 0.022067606449127197
+  },
+  "model.layers.3.mlp.up_proj": {
+    "actual": 0.045628976076841354,
+    "random": 0.04419282078742981
+  },
+  "model.layers.4.mlp.down_proj": {
+    "actual": 0.005961109884083271,
+    "random": 0.005523063242435455
+  },
+  "model.layers.14.mlp.gate_proj": {
+    "actual": 0.05824956297874451,
+    "random": 0.04418464004993439
+  },
+  "model.layers.8.self_attn.v_proj": {
+    "actual": 0.010890954174101353,
+    "random": 0.011042415164411068
+  },
+  "model.layers.4.mlp.up_proj": {
+    "actual": 0.0460030660033226,
+    "random": 0.04418886825442314
+  },
+  "model.layers.14.self_attn.q_proj": {
+    "actual": 0.05431268736720085,
+    "random": 0.022068027406930923
+  },
+  "model.layers.3.self_attn.k_proj": {
+    "actual": 0.03722013905644417,
+    "random": 0.011034475639462471
+  },
+  "model.layers.11.self_attn.q_proj": {
+    "actual": 0.04975026100873947,
+    "random": 0.02207964099943638
+  },
+  "model.layers.8.mlp.up_proj": {
+    "actual": 0.04708990082144737,
+    "random": 0.044191837310791016
+  },
+  "model.layers.14.self_attn.k_proj": {
+    "actual": 0.02773803472518921,
+    "random": 0.011027442291378975
+  },
+  "model.layers.6.self_attn.v_proj": {
+    "actual": 0.011130325496196747,
+    "random": 0.011042219586670399
+  },
+  "model.layers.11.mlp.up_proj": {
+    "actual": 0.04592670872807503,
+    "random": 0.04418991506099701
+  },
+  "model.layers.2.mlp.up_proj": {
+    "actual": 0.04429643228650093,
+    "random": 0.044190675020217896
+  },
+  "model.layers.14.mlp.up_proj": {
+    "actual": 0.05326338857412338,
+    "random": 0.0441877506673336
+  },
+  "model.layers.9.self_attn.o_proj": {
+    "actual": 0.016395138576626778,
+    "random": 0.022092675790190697
+  },
+  "model.layers.1.self_attn.o_proj": {
+    "actual": 0.026205386966466904,
+    "random": 0.022094322368502617
+  },
+  "model.layers.7.self_attn.q_proj": {
+    "actual": 0.05300714820623398,
+    "random": 0.022080548107624054
+  },
+  "model.layers.12.mlp.gate_proj": {
+    "actual": 0.05471726506948471,
+    "random": 0.04419604688882828
+  },
+  "model.layers.6.self_attn.o_proj": {
+    "actual": 0.01707574725151062,
+    "random": 0.02209189347922802
+  },
+  "model.layers.15.mlp.up_proj": {
+    "actual": 0.07705891877412796,
+    "random": 0.04417522996664047
+  },
+  "model.layers.11.self_attn.o_proj": {
+    "actual": 0.01910480670630932,
+    "random": 0.02208918333053589
+  },
+  "model.layers.12.self_attn.q_proj": {
+    "actual": 0.05093904584646225,
+    "random": 0.022081661969423294
+  },
+  "model.layers.11.self_attn.k_proj": {
+    "actual": 0.029037540778517723,
+    "random": 0.011027123779058456
+  },
+  "model.layers.1.self_attn.k_proj": {
+    "actual": 0.036675505340099335,
+    "random": 0.011036135256290436
+  },
+  "model.layers.7.mlp.gate_proj": {
+    "actual": 0.07135605812072754,
+    "random": 0.04417908191680908
+  },
+  "model.layers.10.mlp.down_proj": {
+    "actual": 0.005741881672292948,
+    "random": 0.005522984080016613
+  },
+  "model.layers.2.self_attn.q_proj": {
+    "actual": 0.06207555532455444,
+    "random": 0.02208617702126503
+  },
+  "model.layers.7.mlp.up_proj": {
+    "actual": 0.05032416433095932,
+    "random": 0.0441870242357254
+  },
+  "model.layers.15.self_attn.k_proj": {
+    "actual": 0.03158435970544815,
+    "random": 0.011026054620742798
+  },
+  "model.layers.5.self_attn.q_proj": {
+    "actual": 0.05728241056203842,
+    "random": 0.02207966148853302
+  },
+  "model.layers.7.self_attn.k_proj": {
+    "actual": 0.027830401435494423,
+    "random": 0.011033093556761742
+  },
+  "model.layers.14.self_attn.v_proj": {
+    "actual": 0.01044488325715065,
+    "random": 0.011037497781217098
+  },
+  "model.layers.13.mlp.gate_proj": {
+    "actual": 0.05436474829912186,
+    "random": 0.04418807476758957
+  },
+  "model.layers.8.self_attn.k_proj": {
+    "actual": 0.0280305203050375,
+    "random": 0.011028651148080826
+  },
+  "model.layers.9.mlp.down_proj": {
+    "actual": 0.0056263902224600315,
+    "random": 0.005523438099771738
+  },
+  "model.layers.1.self_attn.v_proj": {
+    "actual": 0.010251416824758053,
+    "random": 0.01104449387639761
+  },
+  "model.layers.4.mlp.gate_proj": {
+    "actual": 0.0654318705201149,
+    "random": 0.04419105872511864
+  },
+  "model.layers.10.self_attn.k_proj": {
+    "actual": 0.02611219510436058,
+    "random": 0.011036166921257973
+  },
+  "model.layers.13.self_attn.v_proj": {
+    "actual": 0.009318595752120018,
+    "random": 0.011043385602533817
+  },
+  "model.layers.3.mlp.gate_proj": {
+    "actual": 0.0632854551076889,
+    "random": 0.04418477788567543
+  },
+  "model.layers.7.self_attn.o_proj": {
+    "actual": 0.016284523531794548,
+    "random": 0.0220840722322464
+  },
+  "model.layers.14.self_attn.o_proj": {
+    "actual": 0.02106725424528122,
+    "random": 0.022090716287493706
+  },
+  "model.layers.7.mlp.down_proj": {
+    "actual": 0.005832368973642588,
+    "random": 0.005523801315575838
+  },
+  "model.layers.3.self_attn.v_proj": {
+    "actual": 0.01045730896294117,
+    "random": 0.011044511571526527
+  },
+  "model.layers.0.self_attn.v_proj": {
+    "actual": 0.009001475758850574,
+    "random": 0.01104083564132452
+  },
+  "model.layers.2.mlp.down_proj": {
+    "actual": 0.006254515610635281,
+    "random": 0.005523536819964647
+  },
+  "model.layers.8.self_attn.o_proj": {
+    "actual": 0.01655694469809532,
+    "random": 0.022093594074249268
+  },
+  "model.layers.4.self_attn.v_proj": {
+    "actual": 0.011003196239471436,
+    "random": 0.011040573008358479
+  },
+  "model.layers.11.mlp.down_proj": {
+    "actual": 0.005572235677391291,
+    "random": 0.00552364531904459
+  },
+  "model.layers.4.self_attn.q_proj": {
+    "actual": 0.06766325980424881,
+    "random": 0.022084612399339676
+  },
+  "model.layers.12.self_attn.v_proj": {
+    "actual": 0.009972430765628815,
+    "random": 0.011044376529753208
+  },
+  "model.layers.3.self_attn.q_proj": {
+    "actual": 0.07201117277145386,
+    "random": 0.0220800768584013
+  },
+  "model.layers.15.mlp.gate_proj": {
+    "actual": 0.0722494125366211,
+    "random": 0.04417557269334793
+  },
+  "model.layers.2.self_attn.k_proj": {
+    "actual": 0.027857352048158646,
+    "random": 0.011037404648959637
+  },
+  "model.layers.5.self_attn.o_proj": {
+    "actual": 0.01876831240952015,
+    "random": 0.022089719772338867
+  },
+  "model.layers.12.self_attn.o_proj": {
+    "actual": 0.019102130085229874,
+    "random": 0.022092416882514954
+  },
+  "model.layers.8.mlp.gate_proj": {
+    "actual": 0.07043595612049103,
+    "random": 0.044187113642692566
+  },
+  "model.layers.12.mlp.down_proj": {
+    "actual": 0.005307839717715979,
+    "random": 0.005523321684449911
+  },
+  "model.layers.9.mlp.gate_proj": {
+    "actual": 0.07054127752780914,
+    "random": 0.044177379459142685
+  },
+  "model.layers.15.self_attn.q_proj": {
+    "actual": 0.06199417635798454,
+    "random": 0.022064968943595886
+  }
+}
