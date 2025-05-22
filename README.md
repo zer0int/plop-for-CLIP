@@ -1,4 +1,4 @@
-# Simplified Alignment Metrics Runner
+# PLoP: Precise LoRA Placement for Efficient Finetuning of Large Models
 
 This project provides a simple script to compute alignment metrics for transformer models on various datasets.
 
