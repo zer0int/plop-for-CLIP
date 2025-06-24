@@ -57,13 +57,14 @@ def calculate_nfn_scores(model, batch, random_baseline=True):
                     W_normalized = W / (W_norm + 1e-8)
                     z_normalized = z / (z_norm + 1e-8)
                     Wz = torch.mm(z_normalized, W_normalized.t())
-                    metrics[name]['actual'] = torch.norm(Wz, dim=1).mean().item()/z.shape[1]
+                    metrics[name]['actual'] = torch.norm(Wz, dim=1).mean().item()/np.sqrt(z.shape[1])
                     if random_baseline:
                         z_random = torch.randn_like(z_normalized)
                         z_random_norm = torch.norm(z_random, dim=1, keepdim=True)
                         z_random_normalized = z_random / (z_random_norm + 1e-8)
                         Wz_random = torch.mm(z_random_normalized, W_normalized.t())
-                        metrics[name]['random'] = torch.norm(Wz_random, dim=1).mean().item()/z.shape[1]
+                        metrics[name]['random'] = torch.norm(Wz_random, dim=1).mean().item()/np.sqrt(z.shape[1])
+                    metrics[name]['nfn'] = metrics[name]['actual']/metrics[name]['random']
                 except RuntimeError as e:
                     print(f"Error in layer {name}:")
                     print(f"Input shape: {z.shape}")
@@ -83,7 +84,7 @@ def calculate_nfn_scores(model, batch, random_baseline=True):
 
     return metrics
 
-def get_group_metrics(metrics, groups=['q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj', 'down_proj']):
+def get_group_metrics(metrics, groups=['q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj', 'down_proj'], individual=False):
     """
     Calculate group metrics.
     Args:
@@ -97,7 +98,8 @@ def get_group_metrics(metrics, groups=['q_proj', 'k_proj', 'v_proj', 'o_proj', '
         group_metrics[group] = {
             'count': 0,
             'actual_sum': 0.0,
-            'random_sum': 0.0
+            'random_sum': 0.0,
+            'nfn_sum': 0.0
         }
     for name, values in metrics.items():
         for group in groups:
@@ -105,15 +107,23 @@ def get_group_metrics(metrics, groups=['q_proj', 'k_proj', 'v_proj', 'o_proj', '
                 group_metrics[group]['count'] += 1
                 group_metrics[group]['actual_sum'] += values.get('actual', 0.0)
                 group_metrics[group]['random_sum'] += values.get('random', 0.0)
+                group_metrics[group]['nfn_sum'] += values.get('nfn', 0.0)
     results = {}
     for group, data in group_metrics.items():
         count = data['count']
         if count > 0:
-            results[group] = {
+            if not individual:
+                results[group] = {
                 'actual': data['actual_sum'] / count,
-                'random': data['random_sum'] / count if 'random_sum' in data else 0.0,
-                'nfn': data['actual_sum'] / data['random_sum'] if 'random_sum' in data else 0.0
-            }
+                    'random': data['random_sum'] / count if 'random_sum' in data else 0.0,
+                    'nfn': data['actual_sum'] / data['random_sum'] if 'random_sum' in data else 0.0
+                }
+            else:
+                results[group] = {
+                    'actual': data['actual_sum'] / count,
+                    'random': data['random_sum'] / count if 'random_sum' in data else 0.0,
+                    'nfn': data['nfn_sum'] / count
+                }
         else:
             results[group] = {'actual': 0.0, 'random': 0.0, 'nfn': 0.0}
     return results 

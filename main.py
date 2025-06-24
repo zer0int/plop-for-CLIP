@@ -38,9 +38,11 @@ def average_metrics(metrics_list):
     for k in all_keys:
         actuals = [m[k]['actual'] for m in metrics_list if k in m]
         randoms = [m[k]['random'] for m in metrics_list if k in m]
+        nfn = [m[k]['nfn'] for m in metrics_list if k in m]
         avg_metrics[k] = {
             'actual': sum(actuals) / len(actuals) if actuals else 0.0,
             'random': sum(randoms) / len(randoms) if randoms else 0.0,
+            'nfn': sum(nfn) / len(nfn) if nfn else 0.0
         }
     return avg_metrics
 
@@ -77,10 +79,11 @@ def main():
     # Get dataset
     print(f"Loading dataset: {args.dataset} ({dataset_name})")
     problems = get_dataset(dataset_name, args.nbsamples, tokenizer)
+    #import pdb; pdb.set_trace()
     print(f"Sampled {len(problems)} problems from dataset")
     if len(problems) > args.nbsamples:
         problems = random.sample(problems, args.nbsamples)
-
+        
     # Split into batches
     batches = [problems[i:i+args.batchsize] for i in range(0, len(problems), args.batchsize)]
     print(f"Processing {len(batches)} batches of size up to {args.batchsize}")
@@ -103,7 +106,7 @@ def main():
     # Aggregation
     agg_results = None
     if args.aggregation == 'type':
-        agg_results = get_group_metrics(avg_metrics)
+        agg_results = get_group_metrics(avg_metrics, individual=True)
         agg_path = os.path.join(args.output_dir, args.model.split('/')[-1] + '_' + args.dataset + '_aggregated_by_type.json')
         with open(agg_path, 'w') as f:
             json.dump(agg_results, f, indent=2)
@@ -119,7 +122,7 @@ def main():
                     layer_numbers.add(layer_num)
                 except (IndexError, ValueError):
                     continue
-        agg_results = get_group_metrics(avg_metrics, groups=[f'layers.{i}' for i in sorted(layer_numbers)])
+        agg_results = get_group_metrics(avg_metrics, groups=[f'layers.{i}' for i in sorted(layer_numbers)], individual=True)
         agg_path = os.path.join(args.output_dir, args.model.split('/')[-1] + '_' + args.dataset + '_aggregated_by_layer.json')
         with open(agg_path, 'w') as f:
             json.dump(agg_results, f, indent=2)
