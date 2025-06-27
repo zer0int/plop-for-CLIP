@@ -1,3 +1,26 @@
+# PLoP for CLIP
+
+- Uses 'import clip' / [OpenAI/CLIP](https://github.com/openai/CLIP)
+- Modified version, exposing attn -> `attnclip` folder
+
+0. Download dataset from [huggingface.co/datasets/SPRIGHT-T2I/spright_coco](https://huggingface.co/datasets/SPRIGHT-T2I/spright_coco) (I provided the labels as .json here), or insert your own as `train_dataset`, `val_dataset` in all `plop-for-clip` code.
+1. Run all `plop-for-clip*`
+2. Run all `compare-clip*`
+3. Check out the results!
+
+![results-plop-for-clip](https://github.com/user-attachments/assets/c883e5b1-7bd6-4854-9547-fbf85708022d)
+
+### Register Neurons
+- For more information on what 'register neurons' are and how to find them, see [github.com/zer0int/CLIP-test-time-registers](https://github.com/zer0int/CLIP-test-time-registers)
+- Register Neuron Intervention vs. Bogus Neuron Intervention:
+
+![CLIP-plop-intervention](https://github.com/user-attachments/assets/ef33eae5-22e5-473d-9520-9399c68c54ff)
+
+
+------
+ORIGINAL README.MD BELOW
+------
+
 # PLoP: Precise LoRA Placement for Efficient Finetuning of Large Models
 
 This project provides a simple script to compute alignment metrics for transformer models on various datasets.
