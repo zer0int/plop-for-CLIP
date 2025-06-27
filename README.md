@@ -6,7 +6,8 @@
 0. Download dataset from [huggingface.co/datasets/SPRIGHT-T2I/spright_coco](https://huggingface.co/datasets/SPRIGHT-T2I/spright_coco) (I provided the labels as .json here), or insert your own as `train_dataset`, `val_dataset` in all `plop-for-clip` code.
 1. Run all `plop-for-clip*`
 2. Run all `compare-clip*`
-3. Check out the results!
+3. Run all `clip-attention`
+4. Check out the results!
 
 ![results-plop-for-clip](https://github.com/user-attachments/assets/c883e5b1-7bd6-4854-9547-fbf85708022d)
 
@@ -16,6 +17,9 @@
 
 ![CLIP-plop-intervention](https://github.com/user-attachments/assets/ef33eae5-22e5-473d-9520-9399c68c54ff)
 
+- Attention L2 for individual heads:
+
+![CLIP-before-after-heads](https://github.com/user-attachments/assets/78efb4d0-3ee5-452d-bdb3-be944276cc1e)
 
 ------
 ORIGINAL README.MD BELOW
